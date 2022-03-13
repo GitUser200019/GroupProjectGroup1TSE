@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Damage")]
+    public Transform attackPos;
+    public LayerMask whatIsEnemies;
+    public float attackRange;
+    public int damage;
+
     [Header("Movement")]
     public float MoveSpeed;
     public float jumpForce;
@@ -38,11 +44,11 @@ public class Movement : MonoBehaviour
         Debug.Log(moveInput);
         rb.velocity = new Vector2(moveInput * MoveSpeed, rb.velocity.y);
 
-        if(facingRight == false && moveInput > 0)
+        if (facingRight == false && moveInput > 0)
         {
             Flip();
         }
-        else if(facingRight == true && moveInput < 0)
+        else if (facingRight == true && moveInput < 0)
         {
             Flip();
         }
@@ -50,17 +56,18 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if(isGrounded == true)
+        if (isGrounded == true)
         {
             extraJumps = extraJumpsValue;
         }
 
-        if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true){
+        else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
+        {
             rb.velocity = Vector2.up * jumpForce;
         }
 
@@ -102,7 +109,14 @@ public class Movement : MonoBehaviour
 
     void DashAttack()
     {
-        if(facingRight == true)
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+        for (int i = 0; i < enemiesToDamage.Length; i++)
+        {
+            enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+        }
+    
+
+        if (facingRight == true)
         {
             transform.position += Vector3.right * MoveSpeed;
         }
@@ -111,6 +125,7 @@ public class Movement : MonoBehaviour
             transform.position -= Vector3.right * MoveSpeed;
         }
 
-        
+
     }
+
 }
