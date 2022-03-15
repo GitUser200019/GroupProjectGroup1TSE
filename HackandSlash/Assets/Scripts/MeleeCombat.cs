@@ -14,7 +14,8 @@ public class MeleeCombat : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damage;
-
+    public GameObject dash_emitter;
+    public GameObject slash_line;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,7 @@ public class MeleeCombat : MonoBehaviour
             {
 
                 //anim.SetTrigger("swipe");
-
+                Instantiate(slash_line,dash_emitter.transform.position,dash_emitter.transform.rotation);
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for(int i = 0; i < enemiesToDamage.Length; i++)
                 {
