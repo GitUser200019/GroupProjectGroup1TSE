@@ -13,18 +13,19 @@ public class Enemy : MonoBehaviour
     private float dazedTime;
     public float startedDazedTime;
 
-    public GameObject player;
-
     public float speed;
 
+    public GameObject player;
     //to damage player
     public int damage;
 
     public Image healthBar;
 
-    Vector3 distance;
-
-    bool isInRange;
+    [Header("Gun")]
+    public GameObject gunFirePos;
+    public GameObject bullet;
+    public float fireTimer = 0;
+    public float canShoot = 0.56f;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,12 +35,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distance = player.transform.position - transform.position;
-       // if (distance <  )
-      //  {
-       //     isInRange = true;
-      //  }
-
+        float distance = Vector3.Distance(player.transform.position, this.transform.position);
 
         if (dazedTime <= 0)
         { speed = 2; }
@@ -49,9 +45,22 @@ public class Enemy : MonoBehaviour
         }
         healthBar.fillAmount = health / 100f;
 
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+       // transform.Translate(Vector2.left * speed * Time.deltaTime);
 
+        if(distance < 7)
+        {
+            fireTimer += Time.deltaTime;
+            if (fireTimer > canShoot)
+            {
+                Instantiate(bullet, transform.position, transform.rotation);
+                fireTimer = 0;
+            }
+        }
         
+
+
+
+
     }
     public void TakeDamage(int damage)
     {
