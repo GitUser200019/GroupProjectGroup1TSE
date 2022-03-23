@@ -28,5 +28,13 @@ public class Player : MonoBehaviour
         sBar.fillAmount = CurrStamina / 100f;
     }
 
-    
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            CurrHealth -= 10;
+        }
+    }
+
+
 }

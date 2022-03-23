@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
     public LayerMask whatIsGround;
     public GameObject sword;
     public AudioSource swordslash;
+    public ParticleSystem par;
 
     [Header("data variables")]
     bool Jump = false;
@@ -30,10 +31,13 @@ public class Movement : MonoBehaviour
     public int extraJumps;
     public int extraJumpsValue;
 
+    Vector3 mousePosition = Input.mousePosition;
+    
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
     }
 
     void FixedUpdate()
@@ -61,12 +65,12 @@ public class Movement : MonoBehaviour
             extraJumps = extraJumpsValue;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
+        else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
         }
@@ -90,8 +94,12 @@ public class Movement : MonoBehaviour
     {
         facingRight = !facingRight;
         Vector3 Scaler = transform.localScale;
+        Vector3 Scalerz = transform.localScale;
         Scaler.x *= -1;
+        Scalerz.z *= -1;
         transform.localScale = Scaler;
+        par.transform.localScale = Scalerz;
+
     }
 
     void faceMouse()
@@ -118,6 +126,7 @@ public class Movement : MonoBehaviour
 
         if (facingRight == true)
         {
+            //transform.position = Vector3.MoveTowards(mousePosition, mousePosition);
             transform.position += Vector3.right * MoveSpeed;
         }
         else

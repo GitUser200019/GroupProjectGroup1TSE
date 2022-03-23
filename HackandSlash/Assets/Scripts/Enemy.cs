@@ -10,6 +10,10 @@ public class Enemy : MonoBehaviour
     public float health = 100;
     public Text dmgText;
 
+    public GameObject enemyReloadPosition;
+    public float enemyReloadTimer;
+    public float enemyShootTimer;
+
     private float dazedTime;
     public float startedDazedTime;
 
@@ -30,6 +34,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        //anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -45,16 +50,29 @@ public class Enemy : MonoBehaviour
         }
         healthBar.fillAmount = health / 100f;
 
-       // transform.Translate(Vector2.left * speed * Time.deltaTime);
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
 
-        if(distance < 7)
+
+
+        if(distance < 18)
         {
-            fireTimer += Time.deltaTime;
-            if (fireTimer > canShoot)
+            enemyShootTimer += Time.deltaTime;
+            if (enemyShootTimer < 8)
             {
-                Instantiate(bullet, transform.position, transform.rotation);
-                fireTimer = 0;
+
+
+                fireTimer += Time.deltaTime;
+                if (fireTimer > canShoot)
+                {
+                    Instantiate(bullet, transform.position, transform.rotation);
+                    fireTimer = 0;
+                }
             }
+            else if(enemyShootTimer > 10)
+            {
+                //move enemy towards reload pos
+            }
+
         }
         
 
@@ -66,10 +84,10 @@ public class Enemy : MonoBehaviour
     {
         dazedTime = startedDazedTime;
 
-        anim.SetTrigger("dmgT");
+       // anim.SetTrigger("dmgT");
         health -= damage;
         Debug.Log("Took " + damage + " damage");
-        dmgText.text = damage.ToString();
+        //dmgText.text = damage.ToString();
         if(health <= 0)
         {
             Death();
