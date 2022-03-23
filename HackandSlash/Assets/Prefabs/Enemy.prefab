@@ -29,7 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4406945349057046393}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5811164625232826486
 GameObject:
@@ -89,7 +89,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -245,6 +244,10 @@ MonoBehaviour:
   player: {fileID: 0}
   damage: 0
   healthBar: {fileID: 5811164626851837217}
+  deathslash: {fileID: 4307949110563260137, guid: cb57ae2ee3111d648ac5ccd16d55e93e, type: 3}
+  deathparticle: {fileID: 7503309228827892908, guid: a69a9ca496c22864f9121cdf0cd6e1b1, type: 3}
+  lowerhalf: {fileID: 4072662112751855522, guid: 8239ec8b8f72bd84f88c3df8a7843828, type: 3}
+  upperhalf: {fileID: 2020369757492461484, guid: eb1b53c98f1879643bf3e6c3ff2708b9, type: 3}
   gunFirePos: {fileID: 3593611898255851353}
   bullet: {fileID: 8342358608128743465, guid: eb4fadab8c1424144b2e179b32c05232, type: 3}
   fireTimer: 0
