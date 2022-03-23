@@ -25,6 +25,11 @@ public class Enemy : MonoBehaviour
 
     public Image healthBar;
 
+    public GameObject deathslash;
+    public GameObject deathparticle;
+    public GameObject lowerhalf;
+    public GameObject upperhalf;
+
     [Header("Gun")]
     public GameObject gunFirePos;
     public GameObject bullet;
@@ -96,6 +101,10 @@ public class Enemy : MonoBehaviour
 
     public void Death()
     {
+        Instantiate(deathslash,transform.position,transform.rotation);
+        Instantiate(deathparticle,transform.position,transform.rotation);
+        Instantiate(lowerhalf,transform.position,transform.rotation);
+        Instantiate(upperhalf,transform.position,transform.rotation);
         Destroy(gameObject);
     }
 }
