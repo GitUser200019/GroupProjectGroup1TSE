@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+<<<<<<< HEAD
   - Enemy
+=======
+>>>>>>> 542e9b8a5e02014ef625ac176e0cb19aa3da7013
   layers:
   - Default
   - TransparentFX
