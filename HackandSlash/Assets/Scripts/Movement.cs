@@ -31,13 +31,13 @@ public class Movement : MonoBehaviour
     public int extraJumps;
     public int extraJumpsValue;
 
-    
+    Vector3 mousePosition = Input.mousePosition;
     
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
-       
+        mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
     }
 
     void FixedUpdate()
@@ -76,9 +76,10 @@ public class Movement : MonoBehaviour
         }
 
 
-       
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
 
-       
+        //sword.transform.up = mousePosition - transform.position;
 
         // faceMouse();
 
@@ -97,11 +98,22 @@ public class Movement : MonoBehaviour
         Scaler.x *= -1;
         Scalerz.z *= -1;
         transform.localScale = Scaler;
-        //par.transform.localScale = Scalerz;
+        par.transform.localScale = Scalerz;
 
     }
 
-    
+    void faceMouse()
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
+
+        Vector2 direction = new Vector2(
+            mousePosition.x - transform.position.x,
+         mousePosition.y - transform.position.y
+        );
+
+        transform.right = direction;
+    }
 
     void DashAttack()
     {

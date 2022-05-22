@@ -31,11 +31,11 @@ Transform:
   m_Children:
   - {fileID: 1168383030905942529}
   m_Father: {fileID: 8260291771062240149}
-  m_RootOrder: 5
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &7262066283894547580
 TrailRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,11 +127,14 @@ TrailRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
+  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
+  m_ApplyActiveColorSpace: 1
 --- !u!1 &8260291769681295432
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +812,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8260291771062240138}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a9a6cb08ef204245afaac3036a2d906, type: 3}
   m_Name: 
@@ -843,6 +846,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 639444067460686219}
     m_Modifications:
     - target: {fileID: 1263538116963290031, guid: 746b62b5f461d9b4ab7f2b110eb68bf8, type: 3}
@@ -946,6 +950,7 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 746b62b5f461d9b4ab7f2b110eb68bf8, type: 3}
 --- !u!4 &1168383030905942529 stripped
 Transform:
