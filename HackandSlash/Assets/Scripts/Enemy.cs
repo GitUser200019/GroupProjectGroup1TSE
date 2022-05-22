@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+    LevelObjectives lo;
+
     public Animator anim;
 
     public float health = 100;
@@ -20,10 +22,16 @@ public class Enemy : MonoBehaviour
     public float speed;
 
     public GameObject player;
+    public GameObject gm;
     //to damage player
     public int damage;
 
     public Image healthBar;
+
+    public GameObject deathslash;
+    public GameObject deathparticle;
+    public GameObject lowerhalf;
+    public GameObject upperhalf;
 
     [Header("Gun")]
     public GameObject gunFirePos;
@@ -31,9 +39,17 @@ public class Enemy : MonoBehaviour
     public float fireTimer = 0;
     public float canShoot = 0.56f;
     // Start is called before the first frame update
+    void Awake()
+    {
+        gm = GameObject.Find("GameManager");
+    }
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        lo = gm.GetComponent<LevelObjectives>();
+
+        
         //anim = GetComponent<Animator>();
     }
 
@@ -96,6 +112,11 @@ public class Enemy : MonoBehaviour
 
     public void Death()
     {
+        Instantiate(deathslash,transform.position,transform.rotation);
+        Instantiate(deathparticle,transform.position,transform.rotation);
+        Instantiate(lowerhalf,transform.position,transform.rotation);
+        Instantiate(upperhalf,transform.position,transform.rotation);
         Destroy(gameObject);
+        lo.EnemiesInLevel--;
     }
 }
