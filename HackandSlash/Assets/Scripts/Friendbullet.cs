@@ -19,6 +19,10 @@ public class Friendbullet : MonoBehaviour
         //transform.position -= transform.position * TravelSpeed * Time.deltaTime;
         transform.Translate(Vector2.left * TravelSpeed * Time.deltaTime);
     }
-
+    private void OnTriggerEnter2D(Collider2D collider){
+        if(collider.tag =="Enemy"){
+            collider.gameObject.GetComponent<Enemy>().TakeDamage(200);
+        }
+    }
 
 }

@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
     public GameObject sword;
     public AudioSource swordslash;
     public ParticleSystem par;
+    
 
     [Header("data variables")]
     bool Jump = false;
@@ -32,7 +33,7 @@ public class Movement : MonoBehaviour
     public int extraJumpsValue;
 
     
-    
+    public GameObject deflectbox;
     void Start()
     {
         extraJumps = extraJumpsValue;
@@ -109,8 +110,9 @@ public class Movement : MonoBehaviour
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+            GameObject.Instantiate(deflectbox,transform.position,transform.rotation);
         }
-    
+
 
         if (facingRight == true)
         {
@@ -121,6 +123,8 @@ public class Movement : MonoBehaviour
         {
             transform.position -= Vector3.right * MoveSpeed;
         }
+
+        GameObject.Instantiate(deflectbox,transform.position,transform.rotation);
 
 
     }
