@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4965820369405063268
+--- !u!1 &6781799004810373226
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2876558508237267087}
-  - component: {fileID: 7960512700035808036}
+  - component: {fileID: 4403534909956978817}
+  - component: {fileID: 8398796642895455018}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -17,28 +17,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2876558508237267087
+--- !u!4 &4403534909956978817
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4965820369405063268}
+  m_GameObject: {fileID: 6781799004810373226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2705848118869140074}
+  m_Father: {fileID: 4574236191452494436}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &7960512700035808036
+--- !u!82 &8398796642895455018
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4965820369405063268}
+  m_GameObject: {fileID: 6781799004810373226}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -128,7 +128,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &8342358608128743465
+--- !u!1 &7580099028859732007
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,50 +136,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2705848118869140074}
-  - component: {fileID: 7406404432940279735}
-  - component: {fileID: 386417984113307176}
-  - component: {fileID: 4309640827984172544}
-  - component: {fileID: 2222265401991625490}
-  - component: {fileID: -5651543581967339759}
+  - component: {fileID: 4574236191452494436}
+  - component: {fileID: 8952941125146050489}
+  - component: {fileID: 2281983643381216806}
+  - component: {fileID: 297514138572268316}
+  - component: {fileID: 3127264084427994911}
+  - component: {fileID: -8042405198407081631}
   m_Layer: 0
-  m_Name: bullet
+  m_Name: bullet 1
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2705848118869140074
+--- !u!4 &4574236191452494436
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342358608128743465}
+  m_GameObject: {fileID: 7580099028859732007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0078, z: 0}
+  m_LocalPosition: {x: 35.642166, y: 1.1504226, z: 0}
   m_LocalScale: {x: 0.3, y: 0.13, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2876558508237267087}
+  - {fileID: 4403534909956978817}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7406404432940279735
+--- !u!33 &8952941125146050489
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342358608128743465}
+  m_GameObject: {fileID: 7580099028859732007}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &386417984113307176
+--- !u!23 &2281983643381216806
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342358608128743465}
+  m_GameObject: {fileID: 7580099028859732007}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -215,27 +215,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4309640827984172544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342358608128743465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6fa8756b109d74295747a6778413fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TravelSpeed: 12
-  friendbullet: {fileID: 7580099028859732007, guid: e75c9e6a7126b214a85b0fad6f3bcc9b, type: 3}
---- !u!61 &2222265401991625490
+--- !u!61 &297514138572268316
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342358608128743465}
+  m_GameObject: {fileID: 7580099028859732007}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -255,14 +241,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.99999994}
   m_EdgeRadius: 0
---- !u!50 &-5651543581967339759
+--- !u!50 &3127264084427994911
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342358608128743465}
+  m_GameObject: {fileID: 7580099028859732007}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -276,3 +262,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8042405198407081631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580099028859732007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca571ce5ea6e98a47b7f2cb6e4cd3dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TravelSpeed: 12
