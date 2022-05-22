@@ -24,8 +24,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hpBar.fillAmount = CurrHealth / 100f;
-        sBar.fillAmount = CurrStamina / 100f;
+        //hpBar.fillAmount = CurrHealth / 100f;
+        //sBar.fillAmount = CurrStamina / 100f;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
