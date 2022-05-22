@@ -5,19 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
-
-  - Deflect
-
+  - Undefined
   - Enemy
-
+  - Deflect
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - Enemies
+  - 
   - 
   - 
   - 
@@ -44,15 +42,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: background
-    uniqueID: 525159575
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: foreground
-    uniqueID: 992547217
-    locked: 0
-  - name: Enemies
-    uniqueID: 4050607643
     locked: 0
