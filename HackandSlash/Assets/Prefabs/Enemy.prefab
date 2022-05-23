@@ -246,7 +246,7 @@ MonoBehaviour:
   damage: 0
   healthBar: {fileID: 5811164626851837217}
   deathslash: {fileID: 4307949110563260137, guid: cb57ae2ee3111d648ac5ccd16d55e93e, type: 3}
-  deathparticle: {fileID: 7503309228827892908, guid: a69a9ca496c22864f9121cdf0cd6e1b1, type: 3}
+  deathparticle: {fileID: 6848268250481157833, guid: 424ae4317c872514c8625ee3fccaf0bd, type: 3}
   lowerhalf: {fileID: 4072662112751855522, guid: 8239ec8b8f72bd84f88c3df8a7843828, type: 3}
   upperhalf: {fileID: 2020369757492461484, guid: eb1b53c98f1879643bf3e6c3ff2708b9, type: 3}
   gunFirePos: {fileID: 3593611898255851353}
