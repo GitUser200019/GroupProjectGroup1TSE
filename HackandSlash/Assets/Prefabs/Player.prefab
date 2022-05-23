@@ -737,14 +737,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1a9336bb500d44aa82b0d8d1d865df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScene: 0
   attackPos: {fileID: 8260291769681295433}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 64
   attackRange: 4
   damage: 200
+  deflect: {fileID: 4848280885526298897, guid: de0d987e15ec5474eb50a903b5c5d29e, type: 3}
   MoveSpeed: 3
   jumpForce: 5
+  dashSpeed: 0
+  negDashSpeed: 0
   groundCheck: {fileID: 8260291769712525763}
   checkRadius: 0.5
   whatIsGround:
@@ -755,7 +759,6 @@ MonoBehaviour:
   par: {fileID: 0}
   extraJumps: 2
   extraJumpsValue: 2
-  deflectbox: {fileID: 4848280885526298897, guid: de0d987e15ec5474eb50a903b5c5d29e, type: 3}
 --- !u!61 &8260291771062240146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -837,8 +840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837b5e4d410fad54b9260cacd195b4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 0}
-  sBar: {fileID: 0}
+  MaxHealth: 150
+  CurrHealth: 0
 --- !u!1001 &7022790434418428051
 PrefabInstance:
   m_ObjectHideFlags: 0

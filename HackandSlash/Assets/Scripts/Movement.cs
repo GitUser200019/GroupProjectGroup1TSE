@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange;
     public int damage;
+    public GameObject deflect;
 
     [Header("Movement")]
     public float MoveSpeed;
@@ -114,6 +115,7 @@ public class Movement : MonoBehaviour
 
     void DashAttack()
     {
+        GameObject.Instantiate(deflect,transform.position,transform.rotation);
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
