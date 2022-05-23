@@ -5852,6 +5852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e4823748b5dcc4b9c108963f5786d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextLevel: 1
   EnemiesInLevel: 5
   enemy: []
 --- !u!1001 &236078375

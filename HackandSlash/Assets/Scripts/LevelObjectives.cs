@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelObjectives : MonoBehaviour
 {
+    //set next level in game
+    public int NextLevel;
+
     public int EnemiesInLevel;
     public GameObject[] enemy;
 
@@ -16,13 +19,14 @@ public class LevelObjectives : MonoBehaviour
 
     void Update()
     {
-        
 
-        if(EnemiesInLevel <= 0)
+
+        if (EnemiesInLevel <= 0)
         {
-            SceneManager.LoadScene("TILEMAP LEVEL 2");
+            SceneManager.LoadScene(NextLevel);
         }
     }
-
-    
 }
+
+
+

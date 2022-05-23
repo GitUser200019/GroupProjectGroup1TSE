@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
+    //set currentscene in build index so that it can be restated
+    public int currentScene;
+
     [Header("Damage")]
+
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
@@ -14,6 +18,8 @@ public class Movement : MonoBehaviour
     public float MoveSpeed;
     public float jumpForce;
     private float moveInput;
+    public float dashSpeed;
+    public float negDashSpeed;
 
     [Header("Components")]
     private Rigidbody2D rb;
@@ -23,7 +29,6 @@ public class Movement : MonoBehaviour
     public GameObject sword;
     public AudioSource swordslash;
     public ParticleSystem par;
-    
 
     [Header("data variables")]
     bool Jump = false;
@@ -32,13 +37,13 @@ public class Movement : MonoBehaviour
     public int extraJumps;
     public int extraJumpsValue;
 
-    
-    public GameObject deflectbox;
+
+
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
-       
+
     }
 
     void FixedUpdate()
@@ -46,7 +51,7 @@ public class Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         moveInput = Input.GetAxis("Horizontal");
-        //Debug.Log(moveInput);
+        Debug.Log(moveInput);
         rb.velocity = new Vector2(moveInput * MoveSpeed, rb.velocity.y);
 
         if (facingRight == false && moveInput > 0)
@@ -76,17 +81,20 @@ public class Movement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
 
+        OutOfBounds();
 
-       
 
-       
+
+
 
         // faceMouse();
 
         if (Input.GetMouseButtonDown(0))
         {
             DashAttack();
+
             swordslash.Play();
+            swordslash.pitch = Random.Range(0.66f, 1);
         }
     }
 
@@ -102,7 +110,7 @@ public class Movement : MonoBehaviour
 
     }
 
-    
+
 
     void DashAttack()
     {
@@ -110,23 +118,29 @@ public class Movement : MonoBehaviour
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
-            GameObject.Instantiate(deflectbox,transform.position,transform.rotation);
         }
 
 
         if (facingRight == true)
         {
-            //transform.position = Vector3.MoveTowards(mousePosition, mousePosition);
-            transform.position += Vector3.right * MoveSpeed;
+            rb.AddForce(transform.right * dashSpeed);
+            //transform.position += Vector3.right * MoveSpeed;
         }
         else
         {
-            transform.position -= Vector3.right * MoveSpeed;
+            rb.AddForce(transform.right * negDashSpeed);
+            //transform.position -= Vector3.right * MoveSpeed;
         }
 
-        GameObject.Instantiate(deflectbox,transform.position,transform.rotation);
 
+    }
 
+    void OutOfBounds()
+    {
+        if (transform.position.y < 0)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
 }
