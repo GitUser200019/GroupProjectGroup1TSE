@@ -23,6 +23,9 @@ public class Friendbullet : MonoBehaviour
         if(collider.tag =="Enemy"){
             collider.gameObject.GetComponent<Enemy>().TakeDamage(200);
         }
+        if(collider.tag =="wall"){
+        Destroy(gameObject);
+        }
     }
 
 }
