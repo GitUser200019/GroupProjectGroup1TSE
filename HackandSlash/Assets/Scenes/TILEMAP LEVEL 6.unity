@@ -56565,6 +56565,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8260291771062240144, guid: 7ba8207dd806b5a49bc17ac54cd83698, type: 3}
+      propertyPath: dashSpeed
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260291771062240144, guid: 7ba8207dd806b5a49bc17ac54cd83698, type: 3}
+      propertyPath: negDashSpeed
+      value: -5000
+      objectReference: {fileID: 0}
     - target: {fileID: 8260291771062240149, guid: 7ba8207dd806b5a49bc17ac54cd83698, type: 3}
       propertyPath: m_RootOrder
       value: 0
