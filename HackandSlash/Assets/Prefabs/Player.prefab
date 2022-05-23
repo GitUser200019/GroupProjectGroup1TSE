@@ -713,7 +713,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -755,6 +755,7 @@ MonoBehaviour:
   par: {fileID: 0}
   extraJumps: 2
   extraJumpsValue: 2
+  deflectbox: {fileID: 4848280885526298897, guid: de0d987e15ec5474eb50a903b5c5d29e, type: 3}
 --- !u!61 &8260291771062240146
 BoxCollider2D:
   m_ObjectHideFlags: 0

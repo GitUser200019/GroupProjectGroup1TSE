@@ -33,12 +33,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1480,7 +1480,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       TSE_Tileset_48: 1867972492
-      TSE_Tileset_22: 960245497
+      TSE_Tileset_35: -84358117
       TSE_Tileset_12: 1551352348
       TSE_Tileset_25: -1073842118
       TSE_Tileset_34: -451147468
@@ -1539,11 +1539,11 @@ TextureImporter:
       TSE_Tileset_23: -887731277
       TSE_Tileset_42: -923302472
       TSE_Tileset_45: -1378716006
-      TSE_Tileset_29: -1087778331
       TSE_Tileset_36: -1562870713
-      TSE_Tileset_35: -84358117
       TSE_Tileset_6: -764356586
       TSE_Tileset_16: -1324663191
+      TSE_Tileset_29: -1087778331
+      TSE_Tileset_22: 960245497
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
