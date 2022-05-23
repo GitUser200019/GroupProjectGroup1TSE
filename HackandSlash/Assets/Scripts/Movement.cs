@@ -37,13 +37,13 @@ public class Movement : MonoBehaviour
     public int extraJumps;
     public int extraJumpsValue;
 
-
+    Scene scene;
 
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
-
+        SceneManager.GetActiveScene();
     }
 
     void FixedUpdate()
@@ -139,7 +139,11 @@ public class Movement : MonoBehaviour
     {
         if (transform.position.y < 0)
         {
-            SceneManager.LoadScene(0);
+            
+            
+                SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
+            
         }
     }
 
