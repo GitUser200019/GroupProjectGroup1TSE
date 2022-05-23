@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6fa8756b109d74295747a6778413fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TravelSpeed: 12
+  TravelSpeed: 20
   friendbullet: {fileID: 7580099028859732007, guid: e75c9e6a7126b214a85b0fad6f3bcc9b, type: 3}
 --- !u!61 &2222265401991625490
 BoxCollider2D:
