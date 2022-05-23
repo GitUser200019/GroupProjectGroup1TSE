@@ -28,7 +28,8 @@ public class BulletProjectile : MonoBehaviour
         GameObject.Instantiate(friendbullet,transform.position,transform.rotation*Quaternion.Euler(0f,180f,0));
         Destroy(gameObject);
     }
-       if(collider.tag =="Wall"){
+    if(collider.tag =="wall"){
+           Debug.Log("wall");
         Destroy(gameObject);
         }
     }
