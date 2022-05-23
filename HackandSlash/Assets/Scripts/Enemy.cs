@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour
         }
         healthBar.fillAmount = health / 100f;
 
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        //transform.Translate(Vector2.left * speed * Time.deltaTime);
 
 
 
