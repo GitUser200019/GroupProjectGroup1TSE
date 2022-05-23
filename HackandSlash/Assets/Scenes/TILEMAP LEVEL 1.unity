@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 465743156}
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2047569918}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: height
       value: 1.56
@@ -5879,6 +5883,10 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 1425275914}
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2047569918}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: height
       value: 1.56
@@ -6143,6 +6151,10 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 61327443}
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2047569918}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: height
       value: 1.56
@@ -6580,6 +6592,10 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 436909158}
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2047569918}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: height
       value: 1.56
@@ -36487,6 +36503,10 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 604216975}
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2047569918}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: height
       value: 1.56
@@ -36728,6 +36748,10 @@ PrefabInstance:
       propertyPath: aiPath
       value: 
       objectReference: {fileID: 379367092}
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2047569918}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: height
       value: 1.56

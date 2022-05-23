@@ -32670,6 +32670,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -32679,16 +32691,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -34728,6 +34748,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -34737,16 +34769,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -34809,6 +34849,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -34818,16 +34870,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56080,6 +56140,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -56089,16 +56161,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56161,6 +56241,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -56170,16 +56262,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56242,6 +56342,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -56251,16 +56363,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56323,6 +56443,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -56332,16 +56464,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56404,6 +56544,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -56413,16 +56565,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56604,6 +56764,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2780081049124283331, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1824869447}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: height
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: radius
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: maxSpeed
       value: 2
@@ -56613,16 +56785,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: alwaysDrawGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: slowdownDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: endReachedDistance
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: whenCloseToDestination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
+      propertyPath: slowWhenNotFacingTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3431824566988251134, guid: d342f7f2e7b28524597457b2698cdca9, type: 3}
       propertyPath: autoRepath.maximumInterval
@@ -56835,6 +57015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba8207dd806b5a49bc17ac54cd83698, type: 3}
+--- !u!4 &1824869447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8260291771062240149, guid: 7ba8207dd806b5a49bc17ac54cd83698, type: 3}
+  m_PrefabInstance: {fileID: 1824869446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909899647384953919
 PrefabInstance:
   m_ObjectHideFlags: 0

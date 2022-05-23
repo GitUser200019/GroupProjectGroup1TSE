@@ -38,13 +38,14 @@ public class Movement : MonoBehaviour
     public int extraJumps;
     public int extraJumpsValue;
 
-    Scene scene;
+    [SerializeField]
+    //Scene scene;
 
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
-        SceneManager.GetActiveScene();
+        //SceneManager.GetActiveScene();
     }
 
     void FixedUpdate()
@@ -67,6 +68,8 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        
+
         if (isGrounded == true)
         {
             extraJumps = extraJumpsValue;
@@ -143,8 +146,8 @@ public class Movement : MonoBehaviour
         {
             
             
-                SceneManager.GetActiveScene();
-                SceneManager.LoadScene(scene.name);
+                //SceneManager.GetActiveScene();
+                //SceneManager.LoadScene(scene.name);
             
         }
     }
