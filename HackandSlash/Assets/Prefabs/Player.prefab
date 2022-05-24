@@ -766,6 +766,8 @@ MonoBehaviour:
   attackRange: 2
   damage: 200
   deflect: {fileID: 4848280885526298897, guid: de0d987e15ec5474eb50a903b5c5d29e, type: 3}
+  meleecooldown: 0
+  player: {fileID: 8260291771062240138}
   MoveSpeed: 7
   jumpForce: 10
   dashSpeed: 0
@@ -863,6 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 150
   CurrHealth: 0
+  currentiframes: 50
 --- !u!1001 &7022790434418428051
 PrefabInstance:
   m_ObjectHideFlags: 0

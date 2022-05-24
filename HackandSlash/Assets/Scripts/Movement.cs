@@ -16,6 +16,8 @@ public class Movement : MonoBehaviour
     public float attackRange;
     public int damage;
     public GameObject deflect;
+    public int meleecooldown;
+    public GameObject player;
 
     [Header("Movement")]
     public float MoveSpeed;
@@ -49,6 +51,9 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //SceneManager.GetActiveScene();
         anim = GetComponentInChildren<Animator>();
+        player = GameObject.FindWithTag("Player");
+        player.GetComponent<Player>();
+        
     }
 
     void FixedUpdate()
@@ -69,12 +74,13 @@ public class Movement : MonoBehaviour
             Flip();
             anim.SetTrigger("Run");
         }
+        meleecooldown += 1;
     }
 
     void Update()
     {
         
-
+       
         if (isGrounded == true)
         {
             extraJumps = extraJumpsValue;
@@ -99,12 +105,13 @@ public class Movement : MonoBehaviour
 
         // faceMouse();
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && meleecooldown >= 25)
         {
             DashAttack();
             anim.SetTrigger("Attack");
             swordslash.Play();
             swordslash.pitch = Random.Range(0.66f, 1);
+            meleecooldown = 0;
         }
     }
 
@@ -124,6 +131,8 @@ public class Movement : MonoBehaviour
 
     void DashAttack()
     {
+        
+        player.GetComponent<Player>().setIframes();
         GameObject.Instantiate(deflect,transform.position,transform.rotation);
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
         for (int i = 0; i < enemiesToDamage.Length; i++)

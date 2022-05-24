@@ -10,6 +10,10 @@ public class Player : MonoBehaviour
 
     public int MaxHealth = 300;
     public float CurrHealth;
+    public int iframes;
+    public int currentiframes;
+
+   
 
     
 
@@ -23,6 +27,7 @@ public class Player : MonoBehaviour
        
         
         scene = SceneManager.GetActiveScene();
+       
     }
 
     // Update is called once per frame
@@ -41,10 +46,14 @@ public class Player : MonoBehaviour
         //hpBar.fillAmount = CurrHealth / 100f;
         //sBar.fillAmount = CurrStamina / 100f;
     }
+    void FixedUpdate(){
+        iframes = iframes + 1;
+
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Bullet"))
+        if(collision.gameObject.CompareTag("Bullet") && iframes > currentiframes)
         {
             CurrHealth -= 20;
             Debug.Log("Enemyhit player");
@@ -56,5 +65,10 @@ public class Player : MonoBehaviour
     {
         SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+    public void setIframes(){
+        iframes = 0;
+        Debug.Log("called");
     }
 }
