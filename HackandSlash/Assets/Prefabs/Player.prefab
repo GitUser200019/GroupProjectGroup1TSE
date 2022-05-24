@@ -745,8 +745,8 @@ MonoBehaviour:
   attackRange: 2
   damage: 200
   deflect: {fileID: 4848280885526298897, guid: de0d987e15ec5474eb50a903b5c5d29e, type: 3}
-  MoveSpeed: 3
-  jumpForce: 5
+  MoveSpeed: 7
+  jumpForce: 10
   dashSpeed: 0
   negDashSpeed: 0
   groundCheck: {fileID: 8260291769712525763}
@@ -800,7 +800,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
