@@ -33,6 +33,11 @@ public class Player : MonoBehaviour
             SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
+        }
         //hpBar.fillAmount = CurrHealth / 100f;
         //sBar.fillAmount = CurrStamina / 100f;
     }
@@ -47,5 +52,9 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    public void RestartLevel()
+    {
+        SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
 }

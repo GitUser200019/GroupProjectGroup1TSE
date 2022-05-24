@@ -26,6 +26,8 @@ public class LevelObjectives : MonoBehaviour
             SceneManager.LoadScene(NextLevel);
         }
     }
+
+
 }
 
 
