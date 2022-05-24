@@ -742,7 +742,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 64
-  attackRange: 4
+  attackRange: 2
   damage: 200
   deflect: {fileID: 4848280885526298897, guid: de0d987e15ec5474eb50a903b5c5d29e, type: 3}
   MoveSpeed: 3
