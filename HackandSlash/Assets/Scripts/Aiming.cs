@@ -9,7 +9,7 @@ public class Aiming : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         rb = this.GetComponent<Rigidbody2D>();
+        rb = this.GetComponentInParent<Rigidbody2D>();
         player = GameObject.Find("Player").transform;
     }
 

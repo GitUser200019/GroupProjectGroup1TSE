@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5811164625232826482}
   - component: {fileID: 5811164625232826485}
   - component: {fileID: 5811164625232826484}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 3431824566988251134}
   - component: {fileID: 2692112888814832412}
   - component: {fileID: 2780081049124283331}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 5811164625671599770}
   - component: {fileID: 5811164625671599768}
   - component: {fileID: 5811164625671599771}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: HealthBarBackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5811164626338566513}
   - component: {fileID: 5811164626338566527}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 5811164626669066830}
   - component: {fileID: 5811164626669066828}
   - component: {fileID: 5811164626669066831}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 5811164626851837231}
   - component: {fileID: 5811164626851837230}
   - component: {fileID: 5811164626851837217}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 2833809690164356656}
   - component: {fileID: 5741364610238323577}
   - component: {fileID: 2134545633635526548}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageTaken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 3521240987125414987}
   - component: {fileID: 8195922831196307299}
   - component: {fileID: 4668701498850338481}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,7 +941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406945349057046393}
   - component: {fileID: 983772003002448401}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
