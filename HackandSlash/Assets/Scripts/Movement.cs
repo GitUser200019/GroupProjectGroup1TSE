@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     //set currentscene in build index so that it can be restated
     public int currentScene;
 
+    Animator anim;
+
     [Header("Damage")]
 
     public Transform attackPos;
@@ -46,6 +48,7 @@ public class Movement : MonoBehaviour
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         //SceneManager.GetActiveScene();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
@@ -58,11 +61,13 @@ public class Movement : MonoBehaviour
 
         if (facingRight == false && moveInput > 0)
         {
+            anim.SetTrigger("Run");
             Flip();
         }
         else if (facingRight == true && moveInput < 0)
         {
             Flip();
+            anim.SetTrigger("Run");
         }
     }
 
@@ -79,6 +84,7 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
+            anim.SetTrigger("Jump");
         }
         else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
@@ -96,7 +102,7 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             DashAttack();
-
+            anim.SetTrigger("Attack");
             swordslash.Play();
             swordslash.pitch = Random.Range(0.66f, 1);
         }
