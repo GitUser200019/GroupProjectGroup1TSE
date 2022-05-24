@@ -80,7 +80,8 @@ public class Enemy : MonoBehaviour
                 fireTimer += Time.deltaTime;
                 if (fireTimer > canShoot)
                 {
-                    Instantiate(bullet, transform.position, transform.rotation);
+                    
+                    Instantiate(bullet, gunFirePos.transform.position, gunFirePos.transform.rotation);
                     fireTimer = 0;
                 }
             }
