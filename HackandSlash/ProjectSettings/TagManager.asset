@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Deflect
   - wall
+  - deflect
   layers:
   - Default
   - TransparentFX
