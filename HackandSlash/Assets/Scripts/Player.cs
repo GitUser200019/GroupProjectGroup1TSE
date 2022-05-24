@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
 
 
-    public int MaxHealth = 150;
+    public int MaxHealth = 300;
     public float CurrHealth;
 
     
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Bullet"))
         {
-            CurrHealth -= 40;
+            CurrHealth -= 20;
             Debug.Log("Enemyhit player");
             
         }
