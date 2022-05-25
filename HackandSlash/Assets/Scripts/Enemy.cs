@@ -32,6 +32,8 @@ public class Enemy : MonoBehaviour
     public GameObject deathparticle;
     public GameObject lowerhalf;
     public GameObject upperhalf;
+    public GameObject fronthalf;
+    public GameObject backhalf;
     public int shotgunner = 0;
 
     [Header("Gun")]
@@ -145,11 +147,22 @@ public class Enemy : MonoBehaviour
 
     public void Death()
     {
+        if(shotgunner == 0){
         Instantiate(deathslash,transform.position,transform.rotation);
         Instantiate(deathparticle,transform.position,transform.rotation);
         Instantiate(lowerhalf,transform.position,transform.rotation);
         Instantiate(upperhalf,transform.position,transform.rotation);
         Destroy(gameObject);
         lo.EnemiesInLevel--;
+        }
+        if(shotgunner == 1){
+        Instantiate(deathslash,transform.position,transform.rotation);
+        Instantiate(deathparticle,transform.position,transform.rotation);
+        Instantiate(fronthalf,transform.position,transform.rotation);
+        Instantiate(backhalf,transform.position,transform.rotation);
+        Destroy(gameObject);
+        lo.EnemiesInLevel--;
+        }
+
     }
 }

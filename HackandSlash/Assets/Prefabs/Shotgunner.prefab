@@ -161,7 +161,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.15964413, y: 0.13486004}
+  m_ConnectedAnchor: {x: -0.15964389, y: 0.13486004}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -331,7 +331,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.04005623, y: 0.79591155}
+  m_ConnectedAnchor: {x: 0.04005599, y: 0.79591167}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -414,7 +414,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8ae72eeed1d1d6642ae36062062fbc0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acc8b4b93785416498d89229f3cd87ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -645,7 +645,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.07600021, y: 0.26129997}
+  m_ConnectedAnchor: {x: -0.075999975, y: 0.26129997}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -815,7 +815,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.29307938, y: -0.0017629862}
+  m_ConnectedAnchor: {x: 0.29307914, y: -0.0017629862}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1023,6 +1023,8 @@ MonoBehaviour:
   deathparticle: {fileID: 6848268250481157833, guid: 424ae4317c872514c8625ee3fccaf0bd, type: 3}
   lowerhalf: {fileID: 4072662112751855522, guid: 8239ec8b8f72bd84f88c3df8a7843828, type: 3}
   upperhalf: {fileID: 2020369757492461484, guid: eb1b53c98f1879643bf3e6c3ff2708b9, type: 3}
+  fronthalf: {fileID: 2863618741288495765, guid: bc30259fa390c864f9e74bd44f23f959, type: 3}
+  backhalf: {fileID: 5887132460362718614, guid: 1a5d3a8b0b21ec74aadc45245330da41, type: 3}
   shotgunner: 1
   gunFirePos: {fileID: 6733963337582776387}
   shotbar1: {fileID: 4992836226842494862}
