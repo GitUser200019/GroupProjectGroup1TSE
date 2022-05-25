@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 50967e6e415a41b4faad7d1fdbcfcca1
+  - enabled: 1
     path: Assets/Scenes/TILEMAP LEVEL 1.unity
     guid: ead8e363ed7bd39479e0adf8e4772135
   - enabled: 1

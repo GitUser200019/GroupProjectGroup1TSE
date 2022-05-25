@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 600bf17a82e718041b2df46057883ae3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Treasurehunt PERSONAL USE
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2871f5138dc39044985849e777ff7590, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
