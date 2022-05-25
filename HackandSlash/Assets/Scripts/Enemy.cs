@@ -32,9 +32,13 @@ public class Enemy : MonoBehaviour
     public GameObject deathparticle;
     public GameObject lowerhalf;
     public GameObject upperhalf;
+    public int shotgunner = 0;
 
     [Header("Gun")]
     public GameObject gunFirePos;
+    public GameObject shotbar1;
+    public GameObject shotbar2;
+    public GameObject shotbar3;
     public GameObject bullet;
     public float fireTimer = 0;
     public float canShoot = 0.56f;
@@ -69,7 +73,7 @@ public class Enemy : MonoBehaviour
         //transform.Translate(Vector2.left * speed * Time.deltaTime);
 
 
-
+    if(shotgunner == 0){
         if(distance < 18)
         {
             enemyShootTimer += Time.deltaTime;
@@ -91,6 +95,34 @@ public class Enemy : MonoBehaviour
             }
 
         }
+    }
+    if(shotgunner == 1){
+        if(distance < 18)
+        {
+            enemyShootTimer += Time.deltaTime;
+            if (enemyShootTimer < 8)
+            {
+
+
+                fireTimer += Time.deltaTime;
+                if (fireTimer > canShoot)
+                {
+                    
+                    Instantiate(bullet, gunFirePos.transform.position, gunFirePos.transform.rotation);
+                    Instantiate(bullet, shotbar1.transform.position,shotbar1.transform.rotation);
+                    Instantiate(bullet, shotbar2.transform.position,shotbar2.transform.rotation);
+                    Instantiate(bullet, shotbar3.transform.position,shotbar3.transform.rotation);
+                   
+                    fireTimer = 0;
+                }
+            }
+            else if(enemyShootTimer > 10)
+            {
+                //move enemy towards reload pos
+            }
+
+        }
+    }
         
 
 
