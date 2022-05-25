@@ -24937,7 +24937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextLevel: 3
-  EnemiesInLevel: 5
+  EnemiesInLevel: 10
   enemy: []
 --- !u!4 &1774358381
 Transform:
