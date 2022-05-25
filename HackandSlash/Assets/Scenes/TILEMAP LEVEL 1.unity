@@ -5971,7 +5971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextLevel: 1
-  EnemiesInLevel: 5
+  EnemiesInLevel: 7
   enemy: []
 --- !u!1001 &236078375
 PrefabInstance:
@@ -6697,7 +6697,7 @@ Transform:
   - {fileID: 170573335}
   - {fileID: 1637328592}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425275904 stripped
 GameObject:
