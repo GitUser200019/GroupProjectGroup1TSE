@@ -222,7 +222,13 @@ MonoBehaviour:
   deathparticle: {fileID: 6848268250481157833, guid: 424ae4317c872514c8625ee3fccaf0bd, type: 3}
   lowerhalf: {fileID: 4072662112751855522, guid: 8239ec8b8f72bd84f88c3df8a7843828, type: 3}
   upperhalf: {fileID: 2020369757492461484, guid: eb1b53c98f1879643bf3e6c3ff2708b9, type: 3}
+  fronthalf: {fileID: 0}
+  backhalf: {fileID: 0}
+  shotgunner: 0
   gunFirePos: {fileID: 7896398554794986205}
+  shotbar1: {fileID: 0}
+  shotbar2: {fileID: 0}
+  shotbar3: {fileID: 0}
   bullet: {fileID: 8342358608128743465, guid: eb4fadab8c1424144b2e179b32c05232, type: 3}
   fireTimer: 0
   canShoot: 1.2
@@ -423,7 +429,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5811164625671599773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -548,7 +554,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5811164626669066817}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -683,7 +689,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5811164626851837216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -759,7 +765,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7737304478936879831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
