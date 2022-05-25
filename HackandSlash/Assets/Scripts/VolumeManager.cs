@@ -23,16 +23,18 @@ public class VolumeManager : MonoBehaviour
 
     void Update()
     {
-        //volume  = 0;
+        //volume  = 0 / mute sound
         if(Input.GetKeyDown(KeyCode.O))
         {
             ChangeMasterVolume(0);
         }
-
+        //volume = 0.358 / unmute to max sound volume
         if (Input.GetKeyDown(KeyCode.P))
         {
             ChangeMasterVolume(0.358f);
         }
+
+        
     }
 
     public void ChangeMasterVolume(float value)
